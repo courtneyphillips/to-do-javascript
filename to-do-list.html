@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>To Do</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1>TuDuu List</h1>
+        <p class="lead">Procrastination Station</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a task:</h2>
+          <form id="new-task">
+            <div class="form-group">
+              <label for="task-name">Task Name:  </label>
+              <input type="text" class="form-control task-name" id="task-name">
+            </div>
+            <div class="form-group">
+              <label for="due-date">Due Date:  </label>
+              <input type="date" class="form-control due-date" id="due-date">
+            </div>
+            <div class="form-group">
+              <label for="task-description">Task Description:  </label>
+              <input type="text" class="form-control" id="task-description">
+            </div>
+            <button type="submit" class="btn btn-block btn-default">Add</button>
+          </form>
+          <h2>Tasks:</h2>
+          <ul id="tasks">
+          </ul>
+          <div class="task-display col-md-6">
+            <div id="show-task">
+              <p><b>Task Name:</b>  <span class="task-name"></span></p>
+              <p><b>Due Date:</b>  <span class='due-date'></span></p>
+              <p><b>Task Description:</b>  <span class='task-description'></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
